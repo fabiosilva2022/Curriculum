@@ -1,14 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 .titulo {
-    color: #0400e6;
+    color:var(--cor-texto);
     
 }
+:root{
+    --cor-primaria: #98336C;
+    --cor-secundaria: #486288;
+    --fundo: #718387;
+    --texto-primario: #000000;
+    --texto-secundario: #FFFFFF;
+    --cor-texto: #0400E6;
+}
+
 .cabecalho {
-    
-     background-color: rgb(87, 109, 43);
+    background-color: var(--cor-primaria);
     text-align: center;
+    background: linear-gradient(90deg,
+    rgba(72,98,136,1) 0%, rgba(152,51,108,1) 0%,
+    rgba(0,212,255,1) 100%), url("fundo.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    min-height: 300px;
+
 }
 .perfil {
-    border: 2px solid #0400e6;
+    border: 2px solid var(--cor-secundaria);
     border-radius: 50%;
     margin: 40px;
     
@@ -16,4 +35,25 @@
 .redessociais img {
     padding: 10px;
 
+}
+.menu {
+    background-color: var(--fundo);
+    list-style: none;
+    display: flex;
+}
+.menu-item {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--texto-secundario);
+}
+.menu-item:hover{
+    color: var(--fundo);
+    background-color: var(--texto-secundario);
+}
+.bloco-texto h2 {
+    border-bottom: 2px var(--cor-primaria) solid;
+}
+.bloco-texto p {
+    line-height: 1.5;
 }
