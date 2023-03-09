@@ -15,17 +15,17 @@
     --cor-texto: #0400E6;
 }
 
-.cabecalho {
-    background-color: var(--cor-primaria);
+.cabecalho{
+    background-color:var(--cor-primaria);
     text-align: center;
-    background: linear-gradient(90deg,
-    rgba(72,98,136,1) 0%, rgba(152,51,108,1) 0%,
-    rgba(0,212,255,1) 100%), url("fundo.png");
-    background-repeat: no-repeat; 
+    background: linear-gradient(90deg, rgba(0,0,0,0.49343487394957986) 46%, rgba(255, 0, 221, 0.596) 100%),
+    url("fundo.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    min-height: 300px;
+    min-height: 600px;
 
 }
+
 .perfil {
     border: 2px solid var(--cor-secundaria);
     border-radius: 50%;
